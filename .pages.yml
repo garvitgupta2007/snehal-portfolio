@@ -1,0 +1,45 @@
+media:
+  input: media
+  output: media
+  categories: [image]
+  extensions: [jpg, jpeg, png, webp, avif]
+content:
+  - name: projects
+    label: Portfolio projects
+    type: file
+    path: projects.json
+    format: json
+    list: true
+    fields:
+      - name: id
+        label: Project ID
+        type: string
+        required: true
+      - name: title
+        label: Project title
+        type: string
+        required: true
+      - name: description
+        label: Short description
+        type: text
+      - name: category
+        label: Category
+        type: select
+        options:
+          values:
+            - Cinematic Edits
+            - Reels & Short-Form Content
+            - Travel Films
+            - Colour Grading
+            - Creative Experiments
+      - name: thumbnail
+        label: Thumbnail image path or URL
+        type: string
+      - name: videoSource
+        label: Video source
+        type: select
+        options:
+          values: [drive, instagram, direct, none]
+      - name: videoUrl
+        label: Video link
+        type: string

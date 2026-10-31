@@ -1,0 +1,29 @@
+[
+  {
+    "id": "01",
+    "title": "Your first project",
+    "description": "Replace this with a short description of the edit.",
+    "category": "Cinematic Edits",
+    "thumbnail": "",
+    "videoSource": "none",
+    "videoUrl": ""
+  },
+  {
+    "id": "02",
+    "title": "Your second project",
+    "description": "Replace this with a short description of the edit.",
+    "category": "Reels & Short-Form Content",
+    "thumbnail": "",
+    "videoSource": "none",
+    "videoUrl": ""
+  },
+  {
+    "id": "03",
+    "title": "Your third project",
+    "description": "Replace this with a short description of the edit.",
+    "category": "Travel Films",
+    "thumbnail": "",
+    "videoSource": "none",
+    "videoUrl": ""
+  }
+]
