@@ -1,29 +1,25 @@
 [
   {
     "id": "01",
-    "title": "Your first project",
-    "description": "Replace this with a short description of the edit.",
-    "category": "Cinematic Edits",
-    "thumbnail": "",
-    "videoSource": "none",
-    "videoUrl": ""
+    "title": "snehal is gay",
+    "description": "sale paise de de ",
+    "category": "Travel Films",
+    "thumbnail": "\"C:\\Users\\gupta\\OneDrive\\Pictures\\Screenshots\\Screenshot 2026-10-31 211144.png\"",
+    "videoSource": "instagram",
+    "videoUrl": "https://www.instagram.com/tanwarsnehal/reel/DeqwHh7RA7z/"
   },
   {
     "id": "02",
     "title": "Your second project",
     "description": "Replace this with a short description of the edit.",
     "category": "Reels & Short-Form Content",
-    "thumbnail": "",
-    "videoSource": "none",
-    "videoUrl": ""
+    "videoSource": "none"
   },
   {
     "id": "03",
     "title": "Your third project",
     "description": "Replace this with a short description of the edit.",
     "category": "Travel Films",
-    "thumbnail": "",
-    "videoSource": "none",
-    "videoUrl": ""
+    "videoSource": "none"
   }
 ]
