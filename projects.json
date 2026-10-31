@@ -4,7 +4,7 @@
     "title": "my first project",
     "description": "just to check the working of site",
     "category": "Travel Films",
-    "thumbnail": "project1.png",
+    "thumbnail": "https://github.com/garvitgupta2007/snehal-portfolio/blob/main/media/project1.png",
     "videoSource": "instagram",
     "videoUrl": "https://www.instagram.com/tanwarsnehal/reel/DeqwHh7RA7z/"
   },
