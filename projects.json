@@ -1,10 +1,10 @@
 [
   {
     "id": "01",
-    "title": "my first project",
-    "description": "just to check the working of site",
-    "category": "Travel Films",
-    "thumbnail": "media/project1.png",
+    "title": "snehal bahan ka pakod",
+    "description": "drhj vhjvhjvb hvjhv gj b bvhjvlj j,nm",
+    "category": "Cinematic Edits",
+    "thumbnail": "media/Screenshot 2026-10-31 211130.png",
     "videoSource": "instagram",
     "videoUrl": "https://www.instagram.com/tanwarsnehal/reel/DeqwHh7RA7z/",
     "featured": true
@@ -23,6 +23,15 @@
     "description": "Replace this with a short description of the edit.",
     "category": "Travel Films",
     "videoSource": "none",
+    "featured": false
+  },
+  {
+    "id": "4",
+    "title": "cvhvhb",
+    "description": "vhjvjhvh",
+    "category": "Cinematic Edits",
+    "videoSource": "none",
+    "videoUrl": "gvhgvukbuhb.gvgh",
     "featured": false
   }
 ]
