@@ -520,3 +520,36 @@ html[data-theme="light"] .toolkit-section .section-kicker { color: #e6cfb0 !impo
   .sn-theme-toggle { padding: 7px 9px; }
   .sn-enquiry { padding: 18px 15px; }
 }
+
+/* ------------------------------------------------------------------
+   Sticky header: the nav stays reachable at any scroll position and
+   picks up a frosted backdrop once the page has scrolled.
+   ------------------------------------------------------------------ */
+html:root { scroll-padding-top: 104px; }
+
+html[data-theme] .portfolio-shell > header.site-nav {
+  position: fixed;
+  inset-block-start: 0;
+  z-index: 20;
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    box-shadow 0.3s ease, -webkit-backdrop-filter 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+html[data-theme] .portfolio-shell > header.site-nav.sn-nav-stuck {
+  background: #0d0d0fd9;
+  -webkit-backdrop-filter: blur(16px) saturate(150%);
+  backdrop-filter: blur(16px) saturate(150%);
+  border-bottom-color: #ffffff24;
+  box-shadow: 0 12px 34px #00000066;
+}
+
+html[data-theme="light"] .portfolio-shell > header.site-nav.sn-nav-stuck {
+  background: #f5ecd9f5;
+  border-bottom-color: #6b432522;
+  box-shadow: 0 12px 30px #55351a1a;
+}
+
+@media (width <= 650px) {
+  html:root { scroll-padding-top: 88px; }
+}
+

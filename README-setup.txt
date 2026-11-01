@@ -49,8 +49,13 @@ the fields, builds a formatted message and opens
 Send inside WhatsApp — the website cannot send messages on their behalf.
 
 ## Theme
-Dark (near-black + lavender) is the default. The toggle in the navigation
-switches to the warm cream light theme, is stored in `localStorage`
+The warm cream light theme is the default. The toggle in the navigation
+switches to the near-black + lavender dark theme, is stored in `localStorage`
 (`snehal-theme`) and is applied before paint to avoid a flash of the wrong theme.
+
+## Navigation
+The top bar is fixed, so it stays visible while scrolling and gains a frosted
+background once the page is scrolled. The inner page URLs stay unchanged
+(`#home`, `#work`, `#work/<category>`, ...).
 
 Do not put passwords, API keys, or private credentials in this repository.
