@@ -4,22 +4,25 @@
     "title": "my first project",
     "description": "just to check the working of site",
     "category": "Travel Films",
-    "thumbnail": "https://github.com/garvitgupta2007/snehal-portfolio/blob/main/media/project1.png",
+    "thumbnail": "media/project1.png",
     "videoSource": "instagram",
-    "videoUrl": "https://www.instagram.com/tanwarsnehal/reel/DeqwHh7RA7z/"
+    "videoUrl": "https://www.instagram.com/tanwarsnehal/reel/DeqwHh7RA7z/",
+    "featured": true
   },
   {
     "id": "02",
     "title": "Your second project",
     "description": "Replace this with a short description of the edit.",
     "category": "Reels & Short-Form Content",
-    "videoSource": "none"
+    "videoSource": "none",
+    "featured": false
   },
   {
     "id": "03",
     "title": "Your third project",
     "description": "Replace this with a short description of the edit.",
     "category": "Travel Films",
-    "videoSource": "none"
+    "videoSource": "none",
+    "featured": false
   }
 ]

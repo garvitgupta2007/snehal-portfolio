@@ -25,6 +25,7 @@ content:
       - name: category
         label: Category
         type: select
+        default: Cinematic Edits
         options:
           values:
             - Cinematic Edits
@@ -33,13 +34,22 @@ content:
             - Colour Grading
             - Creative Experiments
       - name: thumbnail
-        label: Thumbnail image path or URL
-        type: string
+        label: Thumbnail image
+        type: image
+        options:
+          path: media
+          categories: [image]
+          extensions: [jpg, jpeg, png, webp, avif]
       - name: videoSource
         label: Video source
         type: select
+        default: none
         options:
           values: [drive, instagram, direct, none]
       - name: videoUrl
         label: Video link
         type: string
+      - name: featured
+        label: Feature on the homepage category card
+        description: Optional. If no project in a category is featured, the first project is used.
+        type: boolean
