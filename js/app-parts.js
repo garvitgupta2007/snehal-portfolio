@@ -34,14 +34,19 @@ function snImg(src) {
   var t = String(src || '').trim();
   if (!t) return '';
   if (t.indexOf('./') === 0) t = t.slice(2);
+  /* CMS files often keep spaces in their name; a raw space is not a valid URL
+     character and breaks <img src> / CSS url() in some engines. */
+  var snEnc = function (p) {
+    return String(p).replace(/ /g, '%20').replace(/"/g, '%22');
+  };
   var gh = t.match(/^https?:\/\/(?:www\.)?github\.com\/([^/]+)\/([^/]+)\/(?:blob|raw)\/([^/]+)\/(.+)$/i);
   if (gh) {
     var file = gh[4].split(/[?#]/)[0];
-    return /^media\//i.test(file) ? file : 'https://raw.githubusercontent.com/' + gh[1] + '/' + gh[2] + '/' + gh[3] + '/' + file;
+    return snEnc(/^media\//i.test(file) ? file : 'https://raw.githubusercontent.com/' + gh[1] + '/' + gh[2] + '/' + gh[3] + '/' + file);
   }
   var raw = t.match(/^https?:\/\/raw\.githubusercontent\.com\/[^/]+\/[^/]+\/[^/]+\/(.+)$/i);
-  if (raw && /^media\//i.test(raw[1])) return raw[1];
-  return t;
+  if (raw && /^media\//i.test(raw[1])) return snEnc(raw[1]);
+  return snEnc(t);
 }
 
 function snRouteCat() {
